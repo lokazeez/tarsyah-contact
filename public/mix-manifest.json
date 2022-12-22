@@ -1,0 +1,13 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/default.js": "/js/default.js",
+    "/js/admins.js": "/js/admins.js",
+    "/js/front/contactPage.js": "/js/front/contactPage.js",
+    "/js/notifications.js": "/js/notifications.js",
+    "/js/roles.js": "/js/roles.js",
+    "/js/contacts.js": "/js/contacts.js",
+    "/js/users.js": "/js/users.js",
+    "/js/dashboard.js": "/js/dashboard.js",
+    "/css/default.css": "/css/default.css",
+    "/css/app.css": "/css/app.css"
+}

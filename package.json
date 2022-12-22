@@ -1,0 +1,44 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.0",
+        "@babel/core": "^7.17.0",
+        "@babel/node": "^7.16.8",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-react": "^7.16.7",
+        "@tailwindcss/forms": "^0.4.0",
+        "alpinejs": "^3.4.2",
+        "autoprefixer": "^10.1.0",
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.2.1",
+        "postcss-import": "^14.0.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.48.0",
+        "sass-loader": "^12.1.0",
+        "sweetalert2": "^11.2.0",
+        "tailwindcss": "^3.0.0"
+    },
+    "dependencies": {
+        "@fancyapps/fancybox": "^3.5.7",
+        "@sweetalert2/theme-dark": "^4.0.5",
+        "dropify": "^0.2.2",
+        "filepond": "^4.30.4",
+        "filepond-plugin-file-validate-type": "^1.2.8",
+        "filepond-plugin-image-preview": "^4.6.11",
+        "jstree": "^3.3.12",
+        "select2": "^4.1.0-rc.0",
+        "vue": "^2.6.12"
+    }
+}
