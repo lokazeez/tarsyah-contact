@@ -23,7 +23,7 @@ class Localization
         } else if (request('lang')) {
             $lang = request('lang');
         } else {
-            $lang = 'en';
+            $lang = 'ar';
         }
         if(in_array($request->header('Accept-Language'),config('app.locales'))) {
             // Check header request and determine localization

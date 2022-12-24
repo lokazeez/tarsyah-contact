@@ -52,13 +52,14 @@
                         <div class="col-md-7 d-flex align-items-stretch">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <div class=" text-center mb-2">
-                                    <img src="{{asset('images/logo.png')}}" alt="" style="height: 150px;">
+                                    <img src="{{asset('images/abwab_logo.jpeg')}}" alt="" style="height: 150px;">
                                 </div>
-                                <h3 class="mb-4 text-right">الرجاء ملئ الحقول</h3>
+                                <h3 class="mb-4 text-right">المعلومات الشخصية</h3>
+                                <div id="form-message-warning" style="display: block" class="mb-4 text-right">
                                 @if($errors->any())
                                     {{ implode('', $errors->all(':message')) }}
                                 @endif
-                                <div id="form-message-warning" class="mb-4"></div>
+                               </div>
                                 <form method="POST" id="contactForm" name="contactForm" action="{{route('submit')}}"
                                       enctype="multipart/form-data">
                                     @csrf
@@ -95,43 +96,53 @@
                                                 @error('phone_number')
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror
-                                                <input type="text" class="form-control" name="phone_number" id="subject"
+                                                <input type="text" class="form-control" name="phone_number" id="phone_number"
                                                        placeholder="رقم الجوال" required>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                @error('subject')
-                                                <div class="error">{{ $message }}</div>
+                                        <div class="col-12">
+                                            <h4 class="mb-4 text-right">العقار المطلوب المزاودة عليه</h4>
+
+                                            <div class="form-group text-right"  >
+                                                @error('items')
+                                                <h4 class="error">{{ $message }}</h4>
                                                 @enderror
-                                                <input type="text" class="form-control" name="subject" id="subject"
-                                                       placeholder="الموضوع" required>
+
+                                                <label class="checkbox-inline col-6 text-justify">
+                                                    <input type="checkbox"  id="items"  name="items[]" value="أرض الكورنيش">أرض الكورنيش
+                                                </label>
+                                                <label class="checkbox-inline col-6 text-justify">
+                                                    <input type="checkbox" id="items" name="items[]" value="أرض الخرج">أرض الخرج
+                                                </label>
+                                                <label class="checkbox-inline col-6 text-justify">
+                                                    <input type="checkbox"  id="items" name="items[]" value="عمارة تجارية بالرياض">عمارة تجارية بالرياض
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                @error('message')
-                                                <div class="error">{{ $message }}</div>
-                                                @enderror
-                                                <textarea name="message" class="form-control" id="message" cols="30"
-                                                          rows="7" placeholder="الوصف" required></textarea>
-                                            </div>
-                                        </div>
+{{--                                        <div class="col-md-12">--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                @error('message')--}}
+{{--                                                <div class="error">{{ $message }}</div>--}}
+{{--                                                @enderror--}}
+{{--                                                <textarea name="message" class="form-control" id="message" cols="30"--}}
+{{--                                                          rows="7" placeholder="الوصف" required></textarea>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 @error('images')
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror
-                                                <label for="images" class="d-block text-right">الصور</label>
+                                                <label for="images" class="d-block text-right">صور الشيك <small>(ليس إلزاميا)</small></label>
                                                 <input type="file" class="images" name="images[]" accept="image/*"/>
                                             </div>
-                                            <div class="form-group">
-                                                @error('attachments')
-                                                <div class="error">{{ $message }}</div>
-                                                @enderror
-                                                <label for="attachments" class="d-block text-right">  وثائق اضافية <small>(ليس إلزاميا)</small></label>
-                                                <input type="file" class="attachments" name="attachments[]"/>
-                                            </div>
+{{--                                            <div class="form-group">--}}
+{{--                                                @error('attachments')--}}
+{{--                                                <div class="error">{{ $message }}</div>--}}
+{{--                                                @enderror--}}
+{{--                                                <label for="attachments" class="d-block text-right">  وثائق اضافية <small>(ليس إلزاميا)</small></label>--}}
+{{--                                                <input type="file" class="attachments" name="attachments[]"/>--}}
+{{--                                            </div>--}}
                                         </div>
 
                                         <div class="col-md-12">
@@ -147,6 +158,11 @@
                         <div class="col-md-5 d-flex align-items-stretch">
                             <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
                                 <div class="contact-details" style="">
+
+                                    <div class=" text-center mb-2">
+                                        <img src="{{asset('images/logo.png')}}" alt="" style="height: 150px; background-color: #FFFFFF">
+                                    </div>
+
                                     <h3 class="mb-4 mt-md-4 text-right">الإتصال بنا</h3>
 
                                     <div class="dbox w-100 d-flex align-items-center">

@@ -44,10 +44,10 @@
                                                             class="d-flex align-items-center mb-9 bg-light-secondary rounded p-5">
                                                             <div class="d-flex flex-column flex-grow-1 mr-2">
                                                                 <a href="#"
-                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">{{ __($item.'.name') }}
+                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-h3 mb-1">{{ __($item.'.name') }}
                                                                 </a>
                                                                 <span
-                                                                    class="text-muted font-weight-bold">{{${$item}->name}}</span>
+                                                                    class="font-weight-bold font-size-lg">{{${$item}->name}}</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -56,10 +56,10 @@
                                                             class="d-flex align-items-center mb-9 bg-light-secondary rounded p-5">
                                                             <div class="d-flex flex-column flex-grow-1 mr-2">
                                                                 <a href="tel:{{${$item}->phone_number}}"
-                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">{{ __($item.'.phone_number') }}
+                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-h3 mb-1">{{ __($item.'.phone_number') }}
                                                                 </a>
                                                                 <span
-                                                                    class="text-muted font-weight-bold">{{ ${$item}->phone_number}}</span>
+                                                                    class="font-weight-bold font-size-lg">{{ ${$item}->phone_number}}</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -70,9 +70,9 @@
                                                             class="d-flex align-items-center mb-9 bg-light-secondary rounded p-5">
                                                             <div class="d-flex flex-column flex-grow-1 mr-2">
                                                                 <a href="mailto:{{${$item}->email}}"
-                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">{{ __($item.'.email') }}</a>
+                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-h3 mb-1">{{ __($item.'.email') }}</a>
                                                                 <span
-                                                                    class="text-muted font-weight-bold">{{ ${$item}->email }}</span>
+                                                                    class="font-weight-bold font-size-lg">{{ ${$item}->email }}</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -81,9 +81,9 @@
                                                             class="d-flex align-items-center mb-9 bg-light-secondary rounded p-5">
                                                             <div class="d-flex flex-column flex-grow-1 mr-2">
                                                                 <a href="#"
-                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">{{ __($item.'.subject') }}</a>
+                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-h3 mb-1">{{ __($item.'.id_number') }}</a>
                                                                 <span
-                                                                    class="text-muted font-weight-bold">{{ ${$item}->subject ??   __('admin.empty') }}</span>
+                                                                    class="font-weight-bold font-size-lg">{{ ${$item}->id_number ??   __('admin.empty') }}</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -94,9 +94,12 @@
                                                             class="d-flex align-items-center mb-9 bg-light-secondary rounded p-5">
                                                             <div class="d-flex flex-column flex-grow-1 mr-2">
                                                                 <a href="#"
-                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">{{ __($item.'.message') }}</a>
-                                                                <span
-                                                                    class="text-muted font-weight-bold">{!!  ${$item}->message ??  __('admin.empty')  !!}</span>
+                                                                   class="font-weight-bold text-dark-75 text-hover-primary font-size-h3 mb-1">{{ __($item.'.items') }}</a>
+                                                                @foreach(explode(',',${$item}->items) as $ekar)
+                                                                    <span
+                                                                    class="font-weight-bold font-size-lg">{!!  $ekar  !!}</span>
+                                                                @endforeach
+
                                                             </div>
                                                         </div>
                                                     </div>

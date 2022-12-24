@@ -20,8 +20,7 @@ function dataTables() {
       'name': 'الاسم',
       'email': 'ايميل',
       'phone_number': 'رقم الهاتف',
-      'subject': 'العنوان',
-      'message': 'الوصف',
+      'items': 'العقارات',
       'created_at': 'تاريخ الانشاء',
       'Actions': 'الاجراءات'
     },
@@ -30,8 +29,7 @@ function dataTables() {
       'name': 'Name',
       'email': 'Email',
       'phone_number': 'Phone',
-      'subject': 'Subject',
-      'message': 'Message',
+      'items': 'Items',
       'created_at': 'Submit Date',
       'Actions': 'Actions'
     }
@@ -87,10 +85,7 @@ function dataTables() {
       field: 'id',
       title: columnsName[locale]['id'],
       width: 90,
-      textAlign: 'center',
-      template: function template(row) {
-        return row.image;
-      }
+      textAlign: 'center'
     }, {
       field: 'name',
       title: columnsName[locale]['name']
@@ -101,11 +96,8 @@ function dataTables() {
       field: 'phone_number',
       title: columnsName[locale]['phone_number']
     }, {
-      field: 'subject',
-      title: columnsName[locale]['subject']
-    }, {
-      field: 'message',
-      title: columnsName[locale]['message']
+      field: 'items',
+      title: columnsName[locale]['items']
     }, {
       field: 'created_at',
       title: columnsName[locale]['created_at'],

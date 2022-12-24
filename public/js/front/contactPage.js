@@ -17295,7 +17295,7 @@ var attachmentInput = document.querySelector("input[name='attachments[]']"); // 
 (0,filepond__WEBPACK_IMPORTED_MODULE_0__.create)(imagesInput, {
   storeAsFile: true,
   allowMultiple: true,
-  required: true,
+  // required:true,
   acceptedFileTypes: ['image/*'],
   labelIdle: 'قم بتحميل أو إدراج الصور هنا',
   labelFileTypeNotAllowed: 'هذا الحقل مخصص للصور فقط',
@@ -17306,7 +17306,7 @@ var attachmentInput = document.querySelector("input[name='attachments[]']"); // 
   storeAsFile: true,
   allowMultiple: true,
   acceptedFileTypes: ['application/*'],
-  labelIdle: 'قم بتحميل أو إدراج الملحقات هنا',
+  labelIdle: 'قم بتحميل أو إدراج الشيك هنا',
   labelFileTypeNotAllowed: 'هذا الحقل مخصص لملفات الوورد والاكسل فقط',
   name: 'attachments[]'
 });

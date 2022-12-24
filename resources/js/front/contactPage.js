@@ -18,7 +18,7 @@ const attachmentInput = document.querySelector("input[name='attachments[]']");
 create(imagesInput, {
     storeAsFile: true,
     allowMultiple:true,
-    required:true,
+    // required:true,
     acceptedFileTypes: ['image/*'],
     labelIdle:'قم بتحميل أو إدراج الصور هنا',
     labelFileTypeNotAllowed:'هذا الحقل مخصص للصور فقط',
@@ -31,7 +31,7 @@ create(attachmentInput, {
     storeAsFile: true,
     allowMultiple:true,
     acceptedFileTypes: ['application/*'],
-    labelIdle:'قم بتحميل أو إدراج الملحقات هنا',
+    labelIdle:'قم بتحميل أو إدراج الشيك هنا',
     labelFileTypeNotAllowed:'هذا الحقل مخصص لملفات الوورد والاكسل فقط',
     name:'attachments[]'
 });

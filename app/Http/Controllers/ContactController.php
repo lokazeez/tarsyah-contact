@@ -11,13 +11,10 @@ class ContactController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
-            'subject' => 'required',
             'id_number' => 'required',
             'phone_number' => 'required',
-            'message' => 'required',
-
-            'images' => 'required',
-            'images.*' => 'required|mimes:jpg,png,jpeg|max:16384',
+            'items' => 'required',
+            'images.*' => 'mimes:jpg,png,jpeg|max:16384',
         ]);
 
         $contact = new Contact;
@@ -25,10 +22,9 @@ class ContactController extends Controller
         $contact->name = $request->name;
         $contact->email = $request->email;
         $contact->id_number = $request->id_number;
-        $contact->subject = $request->subject;
         $contact->phone_number = $request->phone_number;
         $contact->message = $request->message;
-
+        $contact->items = implode(',', $request->items);
         $contact->save();
 
         if ($request->hasFile('images')) {

@@ -3,8 +3,9 @@
 return [
     'name' => 'الاسم',
     'phone_number' => 'رقم الموبايل',
-    'email' => 'الاسم',
-    'subject' => 'العنوان',
+    'id_number' => 'الرقم الوطني',
+    'email' => 'الإيميل',
+    'items' => 'العقارات',
     'message' => 'الوصف',
     'images' => 'الصور',
     'attachment' => 'الملحقات',

@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
 
             $table->string('name');
-            $table->string('email');
-            $table->string('id_number');
+            $table->string('email')->nullable();
+            $table->string('id_number')->nullable();
             $table->string('phone_number')->nullable();
-            $table->string('subject')->nullable();
-            $table->text('message');
+            $table->text('items')->nullable();
+            $table->text('message')->nullable();
 
             $table->timestamps();
         });

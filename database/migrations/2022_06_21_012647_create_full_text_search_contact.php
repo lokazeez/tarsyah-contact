@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        DB::statement('ALTER TABLE contacts ADD FULLTEXT idx_full_title_message (name, email,subject,phone_number)');
+        DB::statement('ALTER TABLE contacts ADD FULLTEXT idx_full_title_message (name, email,items,phone_number)');
     }
 
     /**
