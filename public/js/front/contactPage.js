@@ -17295,7 +17295,7 @@ var attachmentInput = document.querySelector("input[name='attachments[]']"); // 
 (0,filepond__WEBPACK_IMPORTED_MODULE_0__.create)(imagesInput, {
   storeAsFile: true,
   allowMultiple: true,
-  // required:true,
+  required: false,
   acceptedFileTypes: ['image/*'],
   labelIdle: 'قم بتحميل أو إدراج الصور هنا',
   labelFileTypeNotAllowed: 'هذا الحقل مخصص للصور فقط',

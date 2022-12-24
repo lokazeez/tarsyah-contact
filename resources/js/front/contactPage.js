@@ -18,7 +18,7 @@ const attachmentInput = document.querySelector("input[name='attachments[]']");
 create(imagesInput, {
     storeAsFile: true,
     allowMultiple:true,
-    // required:true,
+    required:false,
     acceptedFileTypes: ['image/*'],
     labelIdle:'قم بتحميل أو إدراج الصور هنا',
     labelFileTypeNotAllowed:'هذا الحقل مخصص للصور فقط',
