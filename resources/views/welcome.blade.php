@@ -79,7 +79,7 @@
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror
                                                 <input type="email" class="form-control" name="email" id="email"
-                                                       placeholder="الايميل" required>
+                                                       placeholder="الايميل">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -109,7 +109,7 @@
                                                 @enderror
 
                                                 <label class="checkbox-inline col-6 text-justify">
-                                                    <input type="checkbox"  id="items"  name="items[]" value="أرض الكورنيش">أرض الكورنيش
+                                                    <input type="checkbox"  id="items"  name="items[]" value="أرض مرات">أرض مرات
                                                 </label>
                                                 <label class="checkbox-inline col-6 text-justify">
                                                     <input type="checkbox" id="items" name="items[]" value="أرض الخرج">أرض الخرج
