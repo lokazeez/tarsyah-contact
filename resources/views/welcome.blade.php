@@ -88,7 +88,7 @@
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror
                                                 <input type="text" class="form-control" name="id_number" id="email"
-                                                       placeholder="رقم الهوية" required>
+                                                       placeholder="رقم الهوية">
                                             </div>
                                         </div>
                                         <div class="col-md-12">

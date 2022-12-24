@@ -10,7 +10,6 @@ class ContactController extends Controller
     public function store(Request $request) {
         $this->validate($request, [
             'name' => 'required',
-            'id_number' => 'required',
             'phone_number' => 'required',
             'items' => 'required',
             'images.*' => 'mimes:jpg,png,jpeg|max:16384',
