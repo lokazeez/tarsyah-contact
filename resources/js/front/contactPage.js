@@ -20,7 +20,7 @@ create(imagesInput, {
     allowMultiple:true,
     required:false,
     acceptedFileTypes: ['image/*'],
-    labelIdle:'قم بتحميل أو إدراج الصور هنا',
+    labelIdle:'قم بتحميل أو إرفاق الصور هنا',
     labelFileTypeNotAllowed:'هذا الحقل مخصص للصور فقط',
     name:'images[]'
 });
@@ -31,7 +31,7 @@ create(attachmentInput, {
     storeAsFile: true,
     allowMultiple:true,
     acceptedFileTypes: ['application/*'],
-    labelIdle:'قم بتحميل أو إدراج الشيك هنا',
+    labelIdle:'قم بتحميل أو إرفاق الشيك هنا',
     labelFileTypeNotAllowed:'هذا الحقل مخصص لملفات الوورد والاكسل فقط',
     name:'attachments[]'
 });

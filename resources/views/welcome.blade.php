@@ -109,13 +109,13 @@
                                                 @enderror
 
                                                 <label class="checkbox-inline col-6 text-justify">
-                                                    <input type="checkbox"  id="items"  name="items[]" value="أرض مرات">أرض مرات
+                                                    <input type="checkbox"  id="items"  name="items[]" value="أرض مرات">    أرض مرات
                                                 </label>
                                                 <label class="checkbox-inline col-6 text-justify">
-                                                    <input type="checkbox" id="items" name="items[]" value="أرض الخرج">أرض الخرج
+                                                    <input type="checkbox" id="items" name="items[]" value="أرض الخرج"> أرض الخرج
                                                 </label>
-                                                <label class="checkbox-inline col-6 text-justify">
-                                                    <input type="checkbox"  id="items" name="items[]" value="عمارة تجارية بالرياض">عمارة تجارية بالرياض
+                                                <label class="checkbox-inline col-7 text-justify">
+                                                    <input type="checkbox"  id="items" name="items[]" value="عمارة تجارية بالرياض"> عمارة تجارية بالرياض
                                                 </label>
                                             </div>
                                         </div>
@@ -133,7 +133,7 @@
                                                 @error('images')
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror
-                                                <label for="images" class="d-block text-right">صور الشيك <small>(ليس إلزاميا)</small></label>
+                                                <label for="images" class="d-block text-right">صور الشيك <small>(ان وجدت)</small></label>
                                                 <input type="file" class="images" name="images[]" accept="image/*"/>
                                             </div>
 {{--                                            <div class="form-group">--}}
