@@ -56,10 +56,10 @@
                                 </div>
                                 <h3 class="mb-4 text-right">المعلومات الشخصية</h3>
                                 <div id="form-message-warning" style="display: block" class="mb-4 text-right">
-                                @if($errors->any())
-                                    {{ implode('', $errors->all(':message')) }}
-                                @endif
-                               </div>
+                                    @if($errors->any())
+                                        {{ implode('', $errors->all(':message')) }}
+                                    @endif
+                                </div>
                                 <form method="POST" id="contactForm" name="contactForm" action="{{route('submit')}}"
                                       enctype="multipart/form-data">
                                     @csrf
@@ -96,53 +96,61 @@
                                                 @error('phone_number')
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror
-                                                <input type="text" class="form-control" name="phone_number" id="phone_number"
+                                                <input type="text" class="form-control" name="phone_number"
+                                                       id="phone_number"
                                                        placeholder="رقم الجوال" required>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <h4 class="mb-4 text-right">العقار المطلوب المزاودة عليه</h4>
 
-                                            <div class="form-group text-right"  >
+                                            <div class="form-group text-right" style="white-space: nowrap;">
                                                 @error('items')
                                                 <h4 class="error">{{ $message }}</h4>
                                                 @enderror
-
-                                                <label class="checkbox-inline col-6 text-justify">
-                                                    <input type="checkbox"  id="items"  name="items[]" value="أرض مرات">    أرض مرات
+                                                <div class="row">
+                                                    <label class="checkbox-inline col-6 text-justify">
+                                                        <input type="checkbox" id="items" name="items[]"
+                                                               value="أرض مرات"> أرض مرات
+                                                    </label>
+                                                    <label class="checkbox-inline col-6 text-justify">
+                                                        <input type="checkbox" id="items" name="items[]"
+                                                               value="أرض الخرج"> أرض الخرج
+                                                    </label>
+                                                </div>
+                                                <div class="row">
+                                                <label class="checkbox-inline col-12 text-justify">
+                                                    <input type="checkbox" id="items" name="items[]"
+                                                           value="عمارة تجارية بالرياض"> عمارة تجارية بالرياض
                                                 </label>
-                                                <label class="checkbox-inline col-6 text-justify">
-                                                    <input type="checkbox" id="items" name="items[]" value="أرض الخرج"> أرض الخرج
-                                                </label>
-                                                <label class="checkbox-inline col-7 text-justify">
-                                                    <input type="checkbox"  id="items" name="items[]" value="عمارة تجارية بالرياض"> عمارة تجارية بالرياض
-                                                </label>
+                                                </div>
                                             </div>
                                         </div>
-{{--                                        <div class="col-md-12">--}}
-{{--                                            <div class="form-group">--}}
-{{--                                                @error('message')--}}
-{{--                                                <div class="error">{{ $message }}</div>--}}
-{{--                                                @enderror--}}
-{{--                                                <textarea name="message" class="form-control" id="message" cols="30"--}}
-{{--                                                          rows="7" placeholder="الوصف" required></textarea>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
+                                        {{--                                        <div class="col-md-12">--}}
+                                        {{--                                            <div class="form-group">--}}
+                                        {{--                                                @error('message')--}}
+                                        {{--                                                <div class="error">{{ $message }}</div>--}}
+                                        {{--                                                @enderror--}}
+                                        {{--                                                <textarea name="message" class="form-control" id="message" cols="30"--}}
+                                        {{--                                                          rows="7" placeholder="الوصف" required></textarea>--}}
+                                        {{--                                            </div>--}}
+                                        {{--                                        </div>--}}
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 @error('images')
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror
-                                                <label for="images" class="d-block text-right">صور الشيك <small>(ان وجدت)</small></label>
+                                                <label for="images" class="d-block text-right">صور الشيك <small>(إن
+                                                        وجد)</small></label>
                                                 <input type="file" class="images" name="images[]" accept="image/*"/>
                                             </div>
-{{--                                            <div class="form-group">--}}
-{{--                                                @error('attachments')--}}
-{{--                                                <div class="error">{{ $message }}</div>--}}
-{{--                                                @enderror--}}
-{{--                                                <label for="attachments" class="d-block text-right">  وثائق اضافية <small>(ليس إلزاميا)</small></label>--}}
-{{--                                                <input type="file" class="attachments" name="attachments[]"/>--}}
-{{--                                            </div>--}}
+                                            {{--                                            <div class="form-group">--}}
+                                            {{--                                                @error('attachments')--}}
+                                            {{--                                                <div class="error">{{ $message }}</div>--}}
+                                            {{--                                                @enderror--}}
+                                            {{--                                                <label for="attachments" class="d-block text-right">  وثائق اضافية <small>(ليس إلزاميا)</small></label>--}}
+                                            {{--                                                <input type="file" class="attachments" name="attachments[]"/>--}}
+                                            {{--                                            </div>--}}
                                         </div>
 
                                         <div class="col-md-12">
@@ -160,7 +168,8 @@
                                 <div class="contact-details" style="">
 
                                     <div class=" text-center mb-2">
-                                        <img src="{{asset('images/logo.png')}}" alt="" style="height: 150px; background-color: #FFFFFF">
+                                        <img src="{{asset('images/logo.png')}}" alt=""
+                                             style="height: 150px; background-color: #FFFFFF">
                                     </div>
 
                                     <h3 class="mb-4 mt-md-4 text-right">الإتصال بنا</h3>
@@ -170,7 +179,8 @@
                                             <span class="fa fa-phone"></span>
                                         </div>
                                         <div class="text pr-3">
-                                            <p class="text-right" style="direction: ltr"><a href="tel://+966551500035">+966 551 500 035</a></p>
+                                            <p class="text-right" style="direction: ltr"><a href="tel://+966551500035">+966
+                                                    551 500 035</a></p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
