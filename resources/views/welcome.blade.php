@@ -52,7 +52,7 @@
                         <div class="col-md-7 d-flex align-items-stretch">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <div class=" text-center mb-2">
-                                    <img src="{{asset('images/abwab_logo.jpeg')}}" alt="" style="height: 150px;">
+                                    <img src="{{asset('images/nwc_logo.png')}}" alt="" style="height: 300px;">
                                 </div>
                                 <h3 class="mb-4 text-right">المعلومات الشخصية</h3>
                                 <div id="form-message-warning" style="display: block" class="mb-4 text-right">
@@ -101,31 +101,31 @@
                                                        placeholder="رقم الجوال" required>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <h4 class="mb-4 text-right">العقار المطلوب المزاودة عليه</h4>
+{{--                                        <div class="col-12">--}}
+{{--                                            <h4 class="mb-4 text-right">العقار المطلوب المزاودة عليه</h4>--}}
 
-                                            <div class="form-group text-right" style="white-space: nowrap;">
-                                                @error('items')
-                                                <h4 class="error">{{ $message }}</h4>
-                                                @enderror
-                                                <div class="row">
-                                                    <label class="checkbox-inline col-6 text-justify">
-                                                        <input type="checkbox" id="items" name="items[]"
-                                                               value="أرض مرات"> أرض مرات
-                                                    </label>
-                                                    <label class="checkbox-inline col-6 text-justify">
-                                                        <input type="checkbox" id="items" name="items[]"
-                                                               value="أرض الخرج"> أرض الخرج
-                                                    </label>
-                                                </div>
-                                                <div class="row">
-                                                <label class="checkbox-inline col-12 text-justify">
-                                                    <input type="checkbox" id="items" name="items[]"
-                                                           value="عمارة تجارية بالرياض"> عمارة تجارية بالرياض
-                                                </label>
-                                                </div>
-                                            </div>
-                                        </div>
+{{--                                            <div class="form-group text-right" style="white-space: nowrap;">--}}
+{{--                                                @error('items')--}}
+{{--                                                <h4 class="error">{{ $message }}</h4>--}}
+{{--                                                @enderror--}}
+{{--                                                <div class="row">--}}
+{{--                                                    <label class="checkbox-inline col-6 text-justify">--}}
+{{--                                                        <input type="checkbox" id="items" name="items[]"--}}
+{{--                                                               value="أرض مرات"> أرض مرات--}}
+{{--                                                    </label>--}}
+{{--                                                    <label class="checkbox-inline col-6 text-justify">--}}
+{{--                                                        <input type="checkbox" id="items" name="items[]"--}}
+{{--                                                               value="أرض الخرج"> أرض الخرج--}}
+{{--                                                    </label>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="row">--}}
+{{--                                                <label class="checkbox-inline col-12 text-justify">--}}
+{{--                                                    <input type="checkbox" id="items" name="items[]"--}}
+{{--                                                           value="عمارة تجارية بالرياض"> عمارة تجارية بالرياض--}}
+{{--                                                </label>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
                                         {{--                                        <div class="col-md-12">--}}
                                         {{--                                            <div class="form-group">--}}
                                         {{--                                                @error('message')--}}

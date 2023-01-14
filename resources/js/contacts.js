@@ -94,9 +94,6 @@ function dataTables() {
             field: 'phone_number',
             title: columnsName[locale]['phone_number'],
         },{
-            field: 'items',
-            title: columnsName[locale]['items'],
-        }, {
             field: 'created_at',
             title: columnsName[locale]['created_at'],
             type: 'date',

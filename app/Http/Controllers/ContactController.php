@@ -11,7 +11,6 @@ class ContactController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'phone_number' => 'required',
-            'items' => 'required',
             'images.*' => 'mimes:jpg,png,jpeg|max:16384',
         ]);
 
@@ -22,7 +21,7 @@ class ContactController extends Controller
         $contact->id_number = $request->id_number;
         $contact->phone_number = $request->phone_number;
         $contact->message = $request->message;
-        $contact->items = implode(',', $request->items);
+//        $contact->items = implode(',', $request->items);
         $contact->save();
 
         if ($request->hasFile('images')) {
