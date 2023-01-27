@@ -139,6 +139,7 @@ class ContactController extends Controller
                 'name' => $contact->name,
                 'email' => $contact->email,
                 'phone_number' => $contact->phone_number,
+                'id_number' => $contact->id_number,
                 'items' => $contact->items,
                 'message' => $contact->message,
                 'created_at' => Date::parse($contact->created_at)->format('Y-m-d'),
