@@ -64,7 +64,7 @@
                                       enctype="multipart/form-data">
                                     @csrf
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 @error('name')
                                                 <div class="error">{{ $message }}</div>
@@ -73,15 +73,15 @@
                                                        placeholder="الاسم" required>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                @error('email')
-                                                <div class="error">{{ $message }}</div>
-                                                @enderror
-                                                <input type="email" class="form-control" name="email" id="email"
-                                                       placeholder="الايميل">
-                                            </div>
-                                        </div>
+{{--                                        <div class="col-md-6">--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                @error('email')--}}
+{{--                                                <div class="error">{{ $message }}</div>--}}
+{{--                                                @enderror--}}
+{{--                                                <input type="email" class="form-control" name="email" id="email"--}}
+{{--                                                       placeholder="الايميل">--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 @error('id_number')
@@ -98,7 +98,7 @@
                                                 @enderror
                                                 <input type="text" class="form-control" name="phone_number"
                                                        id="phone_number"
-                                                       placeholder="رقم الجوال" required>
+                                                       placeholder="رقم جوال الواتساب" required>
                                             </div>
                                         </div>
 {{--                                        <div class="col-12">--}}

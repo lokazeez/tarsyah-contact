@@ -19,6 +19,7 @@ function dataTables() {
       'id': 'ID',
       'name': 'الاسم',
       'email': 'ايميل',
+      'id_number': 'رقم الهوية',
       'phone_number': 'رقم الهاتف',
       'items': 'العقارات',
       'created_at': 'تاريخ الانشاء',
@@ -28,6 +29,7 @@ function dataTables() {
       'id': 'ID',
       'name': 'Name',
       'email': 'Email',
+      'id_number': 'ID Number',
       'phone_number': 'Phone',
       'items': 'Items',
       'created_at': 'Submit Date',
@@ -90,8 +92,8 @@ function dataTables() {
       field: 'name',
       title: columnsName[locale]['name']
     }, {
-      field: 'email',
-      title: columnsName[locale]['email']
+      field: 'id_number',
+      title: columnsName[locale]['id_number']
     }, {
       field: 'phone_number',
       title: columnsName[locale]['phone_number']
