@@ -179,6 +179,14 @@
                                             <span class="fa fa-phone"></span>
                                         </div>
                                         <div class="text pr-3">
+                                            <p class="text-right" style="direction: ltr; font-size: 20px; font-weight: bold;"><a href="tel://+966502949435">+966 50 294 9435</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-phone"></span>
+                                        </div>
+                                        <div class="text pr-3">
                                             <p class="text-right" style="direction: ltr"><a href="tel://+966551500035">+966
                                                     551 500 035</a></p>
                                         </div>
